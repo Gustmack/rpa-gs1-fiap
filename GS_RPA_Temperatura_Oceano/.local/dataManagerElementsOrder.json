@@ -1,0 +1,45 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "joResponse&Sequence_1",
+        "jsonContent&Sequence_1",
+        "dataTable&Sequence_1",
+        "jsonArray&Sequence_1",
+        "jsonObject&Sequence_1",
+        "Year&Sequence_1",
+        "currentDay&Sequence_1",
+        "DataColumn&Sequence_1",
+        "newColumn&Sequence_1",
+        "jsonString&Sequence_1",
+        "emailUser&Sequence_1",
+        "passwordUser&Sequence_1",
+        "URL_link&Sequence_1",
+        "columnName&Sequence_4",
+        "year&Sequence_2",
+        "temperatures&Sequence_2",
+        "rowData&Sequence_2",
+        "newRow&Sequence_2",
+        "CurrentIndex&Sequence_2",
+        "dayTemperature&Sequence_14",
+        "import_json&Sequence_17",
+        "pythonObject&Sequence_17",
+        "result&Sequence_17",
+        "pythonResult&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
