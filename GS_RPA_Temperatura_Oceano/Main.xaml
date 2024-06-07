@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,5006.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,4498.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -136,7 +136,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="1020.8,4941.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="1020.8,4433.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="joResponse" />
       <Variable x:TypeArguments="x:String" Name="jsonContent" />
@@ -264,13 +264,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleWhile>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="958.4,434.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="958.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="variable1" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
@@ -304,7 +304,7 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
     </Sequence>
-    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="958.4,4301.6" sap2010:WorkflowViewState.IdRef="If_3">
+    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="958.4,4127.2" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -313,18 +313,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="924.8,4055.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="924.8,3880.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="862.4,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonArray]" JsonString="[jsonContent]" />
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="862.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[jsonArray]" />
           <If sap2010:Annotation.AnnotationText="verificar se o array &quot;jsonArray'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[jsonArray.Any(Function(item) Not String.IsNullOrEmpty(item.ToString()))]" sap:VirtualizedContainerService.HintSize="862.4,3702.4" sap2010:WorkflowViewState.IdRef="If_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
@@ -342,13 +344,13 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Percorre a lista do Array para capturar os dados para preenchimento do Data Table" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="721.6,2354.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[jsonArray]">
+                  <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Percorre a lista do Array para capturar os dados para preenchimento do Data Table" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="721.6,2341.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[jsonArray]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="njl:JToken">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="njl:JToken" Name="CurrentItem" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,2134.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,2121.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="year" />
                             <Variable x:TypeArguments="x:String" Name="temperatures" />
@@ -368,14 +370,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <If sap2010:Annotation.AnnotationText="Controle de exceção para verificar existe dados na linha" Condition="[CurrentItem(&quot;name&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;data&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;name&quot;).ToString().Length &gt;= 4 AndAlso&#xD;&#xA;IsNumeric(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) AndAlso&#xD;&#xA;CInt(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) &lt;= DateTime.Now.Year]" sap:VirtualizedContainerService.HintSize="625.6,1829.6" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If sap2010:Annotation.AnnotationText="Controle de exceção para verificar existe dados na linha" Condition="[CurrentItem(&quot;name&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;data&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;name&quot;).ToString().Length &gt;= 4 AndAlso&#xD;&#xA;IsNumeric(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) AndAlso&#xD;&#xA;CInt(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) &lt;= DateTime.Now.Year]" sap:VirtualizedContainerService.HintSize="625.6,1816.8" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Data Table com os dados" DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1384.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Data Table com os dados" DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1372" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -421,19 +423,19 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Percorre os dados do Josn para preehcimento das colunas" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="529.6,577.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CurrentItem(&quot;data&quot;)]">
+                                <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Percorre os dados do Josn para preehcimento das colunas" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="529.6,564.8" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[CurrentItem(&quot;data&quot;)]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="njl:JToken">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="njl:JToken" Name="item" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,348.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,336" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap2010:Annotation.AnnotationText="seleciona o dado do dia e converte como string para inserir no Data Table" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                        <Assign sap2010:Annotation.AnnotationText="seleciona o dado do dia e converte como string para inserir no Data Table" sap:VirtualizedContainerService.HintSize="433.6,144.8" sap2010:WorkflowViewState.IdRef="Assign_9">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:Object">[newRow("Day_" &amp; (CurrentIndex + 1).ToString())]</OutArgument>
                                           </Assign.To>
@@ -501,16 +503,16 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Salva os dados coletados na Data Table em um arquivo CSV para ser reutilizado" CsvAction="Write" DataTable="[dataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="data\SST_Data.csv" sap:VirtualizedContainerService.HintSize="387.2,116.8" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True">
+                  <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Salva os dados coletados na Data Table em um arquivo CSV para ser reutilizado" CsvAction="Write" DataTable="[dataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="data\SST_Data.csv" sap:VirtualizedContainerService.HintSize="433.6,280" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:AppendWriteCsvFile>
-                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" sap2010:Annotation.AnnotationText="Salva os dados coletados na Data Table em um arquivo Excel" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="387.2,108" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" sap2010:Annotation.AnnotationText="Salva os dados coletados na Data Table em um arquivo Excel" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="433.6,108" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                     <ueab:ExcelProcessScopeX.Body>
                       <ActivityAction x:TypeArguments="ui:IExcelProcess">
                         <ActivityAction.Argument>
@@ -551,7 +553,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ueab:ExcelProcessScopeX>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvors no arquivo CSV" sap:VirtualizedContainerService.HintSize="766.4,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvos no arquivo CSV" sap:VirtualizedContainerService.HintSize="766.4,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -568,11 +570,11 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ReadCsvFile>
-                  <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" sap2010:Annotation.AnnotationText="Adiciona os dados coletados do arquivo CSV na Data Table" ColumnName="EventDetected" DataTable="[dataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="625.6,100.8" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
+                  <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" sap2010:Annotation.AnnotationText="Adiciona os dados coletados do arquivo CSV na Data Table" ColumnName="EventDetected" DataTable="[dataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="625.6,264" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -639,6 +641,12 @@
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
                 </Sequence>
                 <Sequence sap2010:Annotation.AnnotationText="Execuçao de algoritmo em python que faz a analise  no dia corrente de anomalias. Se houver identificação de dados que estejam fora dos parâmetros informa True para envio de Email, se não houver dados fora do normal informa False e execução termina" DisplayName="Analise de Dados com Python" sap:VirtualizedContainerService.HintSize="766.4,2806.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
@@ -819,7 +827,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Erro ao acessar a API. Código de status: &quot; &amp; IntResponseStatus.ToString &amp; &quot; - Mensagem: &quot; &amp; responseContent]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Erro ao acessar a API. Código de status: &quot; &amp; IntResponseStatus.ToString &amp; &quot; - Mensagem: &quot; &amp; responseContent]" />
         </Sequence>
       </If.Else>
     </If>

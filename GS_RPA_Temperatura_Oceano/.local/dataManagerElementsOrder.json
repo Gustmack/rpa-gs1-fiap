@@ -12,9 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "IntResponseStatus&Sequence_1",
-        "strResponseContent&Sequence_1",
         "responseContent&Sequence_1",
+        "strResponseContent&Sequence_1",
+        "IntResponseStatus&Sequence_1",
         "variable1&Sequence_21",
         "joResponse&Sequence_1",
         "jsonContent&Sequence_1",
