@@ -1,6 +1,8 @@
+import datetime
+
 def process_temperature_data(json_data):
     try:
-        current_year = "2024"  # Definir o ano corrente como inteiro
+        current_year = str(datetime.date.today().year)  # Definir o ano corrente como inteiro
         # Converter JSON para lista de dicionários manualmente
         data = eval(json_data)
         

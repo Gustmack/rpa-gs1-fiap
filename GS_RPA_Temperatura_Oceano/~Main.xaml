@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,5006.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,2063.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -134,9 +134,10 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="1020.8,4941.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="704,1998.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="joResponse" />
       <Variable x:TypeArguments="x:String" Name="jsonContent" />
@@ -160,7 +161,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Criação de DataTable dinâmico para preenchimento automático de acordo com o que for sendo lid no arquivo Json, considerando os anos e dias dos anos que serão preenchidos" DisplayName="Cria Data Table" sap:VirtualizedContainerService.HintSize="958.4,116.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence sap2010:Annotation.AnnotationText="Criação de DataTable dinâmico para preenchimento automático de acordo com o que for sendo lid no arquivo Json, considerando os anos e dias dos anos que serão preenchidos" DisplayName="Cria Data Table" sap:VirtualizedContainerService.HintSize="641.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -264,7 +265,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleWhile>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="958.4,434.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="641.6,434.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="variable1" />
       </Sequence.Variables>
@@ -304,7 +305,7 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
     </Sequence>
-    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="958.4,4301.6" sap2010:WorkflowViewState.IdRef="If_3">
+    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="641.6,1358.4" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -313,28 +314,28 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="924.8,4055.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,1112" sap2010:WorkflowViewState.IdRef="Sequence_22">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="862.4,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonArray]" JsonString="[jsonContent]" />
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="862.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[jsonArray]" />
-          <If sap2010:Annotation.AnnotationText="verificar se o array &quot;jsonArray'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[jsonArray.Any(Function(item) Not String.IsNullOrEmpty(item.ToString()))]" sap:VirtualizedContainerService.HintSize="862.4,3702.4" sap2010:WorkflowViewState.IdRef="If_4">
+          <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="545.6,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonArray]" JsonString="[jsonContent]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="545.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[jsonArray]" />
+          <If sap2010:Annotation.AnnotationText="verificar se o array &quot;jsonArray'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[jsonArray.Any(Function(item) Not String.IsNullOrEmpty(item.ToString()))]" sap:VirtualizedContainerService.HintSize="545.6,759.2" sap2010:WorkflowViewState.IdRef="If_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="828.8,3182.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,500" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Datatable com os dados do arquivo Json de modo dinâmico" DisplayName="Insere Dados na Data Table" sap:VirtualizedContainerService.HintSize="766.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Datatable com os dados do arquivo Json de modo dinâmico" DisplayName="Insere Dados na Data Table" sap:VirtualizedContainerService.HintSize="449.6,100.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -493,7 +494,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Exportação de dados do DataTable para o arquivo CSV de projeto para salvar em um banco de dados" DisplayName="Salva Dados em PLanilha do CSV e Excel" sap:VirtualizedContainerService.HintSize="766.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <Sequence sap2010:Annotation.AnnotationText="Exportação de dados do DataTable para o arquivo CSV de projeto para salvar em um banco de dados" DisplayName="Salva Dados em PLanilha do CSV e Excel" sap:VirtualizedContainerService.HintSize="449.6,100.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -551,7 +552,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ueab:ExcelProcessScopeX>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvors no arquivo CSV" sap:VirtualizedContainerService.HintSize="766.4,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvos no arquivo CSV" sap:VirtualizedContainerService.HintSize="449.6,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -641,10 +642,10 @@
                     </ui:ForEachRow.Body>
                   </ui:ForEachRow>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Execuçao de algoritmo em python que faz a analise  no dia corrente de anomalias. Se houver identificação de dados que estejam fora dos parâmetros informa True para envio de Email, se não houver dados fora do normal informa False e execução termina" DisplayName="Analise de Dados com Python" sap:VirtualizedContainerService.HintSize="766.4,2806.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence sap2010:Annotation.AnnotationText="Execuçao de algoritmo em python que faz a analise  no dia corrente de anomalias. Se houver identificação de dados que estejam fora dos parâmetros informa True para envio de Email, se não houver dados fora do normal informa False e execução termina" DisplayName="Analise de Dados com Python" sap:VirtualizedContainerService.HintSize="449.6,124" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
@@ -790,10 +791,10 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence sap2010:Annotation.AnnotationText="Informa que os dados do Json não foram preenchidos corretamente" DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,327.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <Sequence sap2010:Annotation.AnnotationText="Informa que os dados do Json não foram preenchidos corretamente" DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,53.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
