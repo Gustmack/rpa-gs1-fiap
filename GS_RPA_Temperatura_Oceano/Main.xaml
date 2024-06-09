@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1218.4,4498.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,3443.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -136,7 +136,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="1020.8,4433.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Analisa Temperatura Oceanos" sap:VirtualizedContainerService.HintSize="1054.4,3378.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="joResponse" />
       <Variable x:TypeArguments="x:String" Name="jsonContent" />
@@ -160,7 +160,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Criação de DataTable dinâmico para preenchimento automático de acordo com o que for sendo lid no arquivo Json, considerando os anos e dias dos anos que serão preenchidos" DisplayName="Cria Data Table" sap:VirtualizedContainerService.HintSize="958.4,116.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence sap2010:Annotation.AnnotationText="Criação de DataTable dinâmico para preenchimento automático de acordo com o que for sendo lid no arquivo Json, considerando os anos e dias dos anos que serão preenchidos" DisplayName="Cria Data Table" sap:VirtualizedContainerService.HintSize="992,116.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -264,7 +264,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleWhile>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="958.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <Sequence sap2010:Annotation.AnnotationText="Acesso a URL por email de assets do Orquestrator para fazer o download do dataset em formato Json" DisplayName="URL dados Oceanos" sap:VirtualizedContainerService.HintSize="992,100.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="variable1" />
       </Sequence.Variables>
@@ -304,7 +304,7 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
     </Sequence>
-    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="958.4,4127.2" sap2010:WorkflowViewState.IdRef="If_3">
+    <If sap2010:Annotation.AnnotationText="Verifica acesso da API dos dados de Temperatura dos Oceanos" Condition="[IntResponseStatus &gt;= 200 AND IntResponseStatus &lt;= 300]" sap:VirtualizedContainerService.HintSize="992,3072" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -313,15 +313,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="924.8,3880.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="958.4,2825.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="862.4,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonArray]" JsonString="[jsonContent]" />
-          <If sap2010:Annotation.AnnotationText="verificar se o array &quot;jsonArray'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[jsonArray.Any(Function(item) Not String.IsNullOrEmpty(item.ToString()))]" sap:VirtualizedContainerService.HintSize="862.4,3702.4" sap2010:WorkflowViewState.IdRef="If_4">
+          <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="896,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonArray]" JsonString="[jsonContent]" />
+          <If sap2010:Annotation.AnnotationText="verificar se o array &quot;jsonArray'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[jsonArray.Any(Function(item) Not String.IsNullOrEmpty(item.ToString()))]" sap:VirtualizedContainerService.HintSize="896,2647.2" sap2010:WorkflowViewState.IdRef="If_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -330,13 +330,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="828.8,3182.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="862.4,2127.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Datatable com os dados do arquivo Json de modo dinâmico" DisplayName="Insere Dados na Data Table" sap:VirtualizedContainerService.HintSize="766.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence sap2010:Annotation.AnnotationText="Preenchimento do Datatable com os dados do arquivo Json de modo dinâmico" DisplayName="Insere Dados na Data Table" sap:VirtualizedContainerService.HintSize="800,100.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -370,7 +370,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <If sap2010:Annotation.AnnotationText="Controle de exceção para verificar existe dados na linha" Condition="[CurrentItem(&quot;name&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;data&quot;) IsNot Nothing AndAlso&#xD;&#xA;CurrentItem(&quot;name&quot;).ToString().Length &gt;= 4 AndAlso&#xD;&#xA;IsNumeric(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) AndAlso&#xD;&#xA;CInt(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) &lt;= DateTime.Now.Year]" sap:VirtualizedContainerService.HintSize="625.6,1816.8" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If sap2010:Annotation.AnnotationText="Controle de exceção para verificar existe dados na linha" Condition="[CurrentItem(&quot;name&quot;) IsNot Nothing AndAlso&#xA;CurrentItem(&quot;data&quot;) IsNot Nothing AndAlso&#xA;CurrentItem(&quot;name&quot;).ToString().Length &gt;= 4 AndAlso&#xA;IsNumeric(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) AndAlso&#xA;CInt(CurrentItem(&quot;name&quot;).ToString().Substring(0, 4)) &lt;= DateTime.Now.Year]" sap:VirtualizedContainerService.HintSize="625.6,1816.8" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -495,7 +495,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Exportação de dados do DataTable para o arquivo CSV de projeto para salvar em um banco de dados" DisplayName="Salva Dados em PLanilha do CSV e Excel" sap:VirtualizedContainerService.HintSize="766.4,100.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <Sequence sap2010:Annotation.AnnotationText="Exportação de dados do DataTable para o arquivo CSV de projeto para salvar em um banco de dados" DisplayName="Salva Dados em PLanilha do CSV e Excel" sap:VirtualizedContainerService.HintSize="800,100.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -553,7 +553,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ueab:ExcelProcessScopeX>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvos no arquivo CSV" sap:VirtualizedContainerService.HintSize="766.4,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence sap2010:Annotation.AnnotationText="Leitura do Banco de dados em formato CSV para analise de anomalias" DisplayName="Leitura dos Dados Salvos no arquivo CSV" sap:VirtualizedContainerService.HintSize="800,88" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -649,7 +649,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Execuçao de algoritmo em python que faz a analise  no dia corrente de anomalias. Se houver identificação de dados que estejam fora dos parâmetros informa True para envio de Email, se não houver dados fora do normal informa False e execução termina" DisplayName="Analise de Dados com Python" sap:VirtualizedContainerService.HintSize="766.4,2806.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence sap2010:Annotation.AnnotationText="Execuçao de algoritmo em python que faz a analise  no dia corrente de anomalias. Se houver identificação de dados que estejam fora dos parâmetros informa True para envio de Email, se não houver dados fora do normal informa False e execução termina" DisplayName="Analise de Dados com Python" sap:VirtualizedContainerService.HintSize="800,1751.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -657,7 +657,7 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap2010:Annotation.AnnotationText="Cria a variável jsonString para ser lido na função do python" sap:VirtualizedContainerService.HintSize="704,144.8" sap2010:WorkflowViewState.IdRef="Assign_16">
+                  <Assign sap2010:Annotation.AnnotationText="Cria a variável jsonString para ser lido na função do python" sap:VirtualizedContainerService.HintSize="737.6,144.8" sap2010:WorkflowViewState.IdRef="Assign_16">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[jsonString]</OutArgument>
                     </Assign.To>
@@ -670,13 +670,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="704,2505.6" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64" TargetPlatform="x64">
+                  <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="737.6,1450.4" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64" TargetPlatform="x64">
                     <p:PythonScope.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670.4,2445.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,1390.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="p:PythonObject" Name="import_json" />
                             <Variable x:TypeArguments="p:PythonObject" Name="pythonObject" />
@@ -688,105 +688,134 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <p:LoadScript Code="{x:Null}" sap2010:Annotation.AnnotationText="Carreaga o arquivo Python" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="608,123.2" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[pythonObject]" ScriptFile="python\import_json.py">
+                          <p:LoadScript Code="{x:Null}" sap2010:Annotation.AnnotationText="Carreaga o arquivo Python" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="641.6,123.2" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[pythonObject]" ScriptFile="python\import_json.py">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </p:LoadScript>
-                          <p:InvokeMethod sap2010:Annotation.AnnotationText="Chama função do arquivo python para execução" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="608,144" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" Instance="[pythonObject]" Name="process_temperature_data" Parameters="[{jsonString}]" Result="[result]">
+                          <p:InvokeMethod sap2010:Annotation.AnnotationText="Chama função do arquivo python para execução" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="641.6,144" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" Instance="[pythonObject]" Name="process_temperature_data" Parameters="[{jsonString}]" Result="[result]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </p:InvokeMethod>
-                          <p:GetObject x:TypeArguments="x:Object" sap2010:Annotation.AnnotationText="Retorna o valor True ou False do arquivo python para enviar alerta ou não" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="608,156.8" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[result]" Result="[pythonResult]">
+                          <p:GetObject x:TypeArguments="x:Object" sap2010:Annotation.AnnotationText="Retorna o valor True ou False do arquivo python para enviar alerta ou não" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="641.6,156.8" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[result]" Result="[pythonResult]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </p:GetObject>
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="608,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[pythonResult.ToString]" />
-                          <If sap2010:Annotation.AnnotationText="Verificar se a condição de retorno do algoritmo python é True. Se for envia o alerta pelo email" Condition="[pythonResult.ToString = &quot;True&quot;]" sap:VirtualizedContainerService.HintSize="608,1812.8" sap2010:WorkflowViewState.IdRef="If_5">
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="641.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[pythonResult.ToString]" />
+                          <If sap2010:Annotation.AnnotationText="Verifica se o retorno do Python é True ou False para ir para a verificação da anomalia" Condition="[pythonResult.ToString = &quot;True&quot; Or pythonResult.ToString = &quot;False&quot;]" sap:VirtualizedContainerService.HintSize="641.6,757.6" sap2010:WorkflowViewState.IdRef="If_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="574.4,1324" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,511.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence sap2010:Annotation.AnnotationText="Envio do email caso haja anomalias nos dados do dia corrente" DisplayName="Envia Email" sap:VirtualizedContainerService.HintSize="512,1237.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <If sap2010:Annotation.AnnotationText="Verificar se a condição de retorno do algoritmo python é True. Se for envia o alerta pelo email" Condition="[pythonResult.ToString = &quot;True&quot;]" sap:VirtualizedContainerService.HintSize="545.6,424.8" sap2010:WorkflowViewState.IdRef="If_5">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:GetRobotCredential TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Busca os Assets tipo Credential para login e senha de email" AssetName="outlook_credencials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="GS_Temperatura_Oceano_RPA" sap:VirtualizedContainerService.HintSize="449.6,219.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[passwordUser]" Username="[emailUser]">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:GetRobotCredential>
-                                  <If sap2010:Annotation.AnnotationText="Verifica se existem dados nos campos de login e senha para serem utilizados para envio do email" Condition="[emailUser IsNot Nothing AndAlso passwordUser IsNot Nothing]" sap:VirtualizedContainerService.HintSize="449.6,875.2" sap2010:WorkflowViewState.IdRef="If_6">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,417.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,165.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence sap2010:Annotation.AnnotationText="Envio do email caso haja anomalias nos dados do dia corrente" DisplayName="Envia Email" sap:VirtualizedContainerService.HintSize="449.6,79.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="Envia email com informativo caso tenha encontrado anomalia" Body="Uma anomalia foi detectada na temperatura média do oceano. Por favor, verifique os detalhes." DisplayName="Send SMTP Mail Message" Email="[emailUser]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="353.6,222.4" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[passwordUser]" Server="smtp-mail.outlook.com" Subject="Alerta de Anomalia na Temperatura do Oceano" To="gustavolgd@gmail.com">
-                                          <ui:SendMail.Files>
-                                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-                                          </ui:SendMail.Files>
+                                        <ui:GetRobotCredential TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Busca os Assets tipo Credential para login e senha de email" AssetName="outlook_credencials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="GS_Temperatura_Oceano_RPA" sap:VirtualizedContainerService.HintSize="449.6,219.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[passwordUser]" Username="[emailUser]">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                        </ui:SendMail>
-                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ATENÇÃO! ANOMALIA DETECTADA&quot;]" />
+                                        </ui:GetRobotCredential>
+                                        <If sap2010:Annotation.AnnotationText="Verifica se existem dados nos campos de login e senha para serem utilizados para envio do email" Condition="[emailUser IsNot Nothing AndAlso passwordUser IsNot Nothing]" sap:VirtualizedContainerService.HintSize="449.6,875.2" sap2010:WorkflowViewState.IdRef="If_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,417.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" sap2010:Annotation.AnnotationText="Envia email com informativo caso tenha encontrado anomalia" Body="Uma anomalia foi detectada na temperatura média do oceano. Por favor, verifique os detalhes." DisplayName="Send SMTP Mail Message" Email="[emailUser]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="353.6,222.4" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[passwordUser]" Server="smtp-mail.outlook.com" Subject="Alerta de Anomalia na Temperatura do Oceano" To="gustavolgd@gmail.com">
+                                                <ui:SendMail.Files>
+                                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                                </ui:SendMail.Files>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:SendMail>
+                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ATENÇÃO! ANOMALIA DETECTADA&quot;]" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Dados de Login e Senha não encontrados&quot;]" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
                                       </Sequence>
-                                    </If.Then>
-                                    <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Dados de Login e Senha não encontrados&quot;]" />
-                                      </Sequence>
-                                    </If.Else>
-                                  </If>
-                                </Sequence>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence sap2010:Annotation.AnnotationText="Informa que nenhuma anomalia foi detectada nos dados do dia corrente" DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,66.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nenhuma Anomalia de Temperatura do Oceano foi Detectada&quot;]" />
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence sap2010:Annotation.AnnotationText="Informa que nenhuma anomalia foi detectada nos dados do dia corrente" DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,296" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <Sequence sap2010:Annotation.AnnotationText="Retorno de Erro caso Python não encontre valor valido" DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,53.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nenhuma Anomalia de Temperatura do Oceano foi Detectada&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[pythonResult.ToString]" />
                               </Sequence>
                             </If.Else>
                           </If>
